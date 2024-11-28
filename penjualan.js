@@ -1,158 +1,158 @@
-const daftarKaryawan = [
+const daftarPelanggan= [
     {
         nama:"Devyn Ramirez",
-        masaKerja: "10",
-        noInduk: "1234567890",
-        gajiKaryawan: "7000000"
+        email: "awwwrsavh@gmail.com",
+        noTelepon: "123456789009",
+        alamat: "Jalan Melati"
 
     },
     {
         nama:"Harmony Duncan",
-        masaKerja: "5",
-        noInduk: "2109876543",
-        gajiKaryawan: "4000000"
+        email: "5",
+        noTelepon: "2109876543",
+        alamat: "4000000"
 
     },
     {
         nama:"Clarissa Burgess",
-        masaKerja: "8",
-        noInduk: "3210987654",
-        gajiKaryawan: "7000000"
+        email: "8",
+        noTelepon: "3210987654",
+        alamat: "7000000"
 
     },
     {
         nama:"Reilly Blanchard",
-        masaKerja: "7",
-        noInduk: "4321098765",
-        gajiKaryawan: "7000000"
+        email: "7",
+        noTelepon: "4321098765",
+        alamat: "7000000"
 
     },
     {
         nama: "Zion Brooks",
-        masaKerja: "4",
-        noInduk: "5432109876",
-        gajiKaryawan: " 4000000"
+        email: "4",
+        noTelepon: "5432109876",
+        alamat: " 4000000"
 
     },
     {
         nama:"Jovanny Mays",
-        masaKerja: "10",
-        noInduk: "6543210987",
-        gajiKaryawan: "7000000"
+        email: "10",
+        noTelepon: "6543210987",
+        alamat: "7000000"
 
     },
     {
         nama:"Cindy Chase",
-        masaKerja: "9",
-        noInduk: "7654321098",
-        gajiKaryawan: "7000000"
+        email: "9",
+        noTelepon: "7654321098",
+        alamat: "7000000"
 
     },
     {
         nama:"Kristin Mcdaniel",
-        masaKerja: "8",
-        noInduk: "8765432109",
-        gajiKaryawan: "7000000"
+        email: "8",
+        noTelepon: "8765432109",
+        alamat: "7000000"
 
     },
     {
         nama:"Macey Sanford",
-        masaKerja: "7",
-        noInduk: "9876543210",
-        gajiKaryawan: "7000000"
+        email: "7",
+        noTelepon: "9876543210",
+        alamat: "7000000"
 
     },
     {
         nama:"Alfredo Faulkner",
-        masaKerja: "10",
-        noInduk: "10987654321",
-        gajiKaryawan: "7000000"
+        email: "10",
+        noTelepon: "10987654321",
+        alamat: "7000000"
 
 },
 ]
      let mode = 'tambah'
 
 
- const tampilkanKaryawan = () => {
+ const tampilkanPelanggan = () => {
 
-    const tblKaryawan =  document.getElementById('tblKaryawan')
-    tblKaryawan.innerHTML = `<tr><th>No</th><th>Nama</th><th>Nomor Induk</th><th>Masa Kerja</th><th>Gaji Karyawan</th><th>Edit</th><th>Hapus</th></tr>`
+    const tblPelanggan =  document.getElementById('tblPelanggan')
+    tblPelanggan.innerHTML = <tr><th>No</th><th>Nama</th><th>Email</th><th>No Telepon</th><th>Alamat</th><th>Edit</th><th>Hapus</th></tr>
 
-    for(let idx in daftarKaryawan){
-        console.log(`${parseInt(idx) + 1}. ${daftarKaryawan[idx].nama} bernomor induk ${daftarKaryawan[idx].noInduk} dengan masa kerja ${daftarKaryawan[idx].masaKerja} tahun dan memiliki gaji ${daftarKaryawan[idx].gajiKaryawan}`);
+    for(let idx in daftarPelanggan){
+        console.log(`${parseInt(idx) + 1}. ${daftarPelanggan[idx].nama} emailnya ${daftarPelanggan[idx].email} dengan nomor telepon ${daftarPelanggan[idx].noTelepon} dan alamatnya di ${daftarPelanggan[idx].alamat}`);
 
-        tblKaryawan.innerHTML += `<tr><td>${parseInt(idx) + 1}</td><td>${daftarKaryawan[idx].nama}</td><td>${daftarKaryawan[idx].noInduk}</td><td>${daftarKaryawan[idx].masaKerja}</td><td>${daftarKaryawan[idx].gajiKaryawan}</td><td><buton class= "btn btn-warning" onclick="editKaryawan('${daftarKaryawan[idx].nama}')">Edit</button></td><td><buton class= "btn btn-danger" onclick="hapusKaryawan('${daftarKaryawan[idx].nama}')">Delete</button></td></tr>`
+        tblPelanggan.innerHTML += <tr><td>${parseInt(idx) + 1}</td><td>${daftarPelanggan[idx].nama}</td><td>${daftarPelanggan[idx].email}</td><td>${daftarPelanggan[idx].noTelepon}</td><td>${daftarPelanggan[idx].alamat}</td><td><button class= "btn btn-warning" onclick="editPelanggan('${daftarPelanggan[idx].nama}')">Edit</button></td><td><button class= "btn btn-danger" onclick="hapusPelanggan('${daftarPelanggan[idx].nama}')">Delete</button></td></tr>
 
     }
 }
 
 
-const tambahKaryawan = () => {
-    const nama = document.getElementById('txtNama').value
-    const masaKerja = document.getElementById('noInduk').value
-    const noInduk = document.getElementById('masaKerja').value
-    const gajiKaryawan = document.getElementById('gajiKaryawan').value
-    const karyawanBaru= {
+const tambahPelanggan = () => {
+    const nama = document.getElementById('exampleInputNama1').value
+    const email = document.getElementById('exampleInputEmail1').value
+    const noTelepon = document.getElementById('exampleInputnoTelp1').value
+    const alamat = document.getElementById('exampleInputNama1').value
+    const pelangganBaru= {
         nama: nama,
-        noInduk: noInduk,
-        masaKerja: masaKerja,
-        gajiKaryawan: gajiKaryawan,
+        email: email,
+        noTelepon: noTelepon,
+        alamat: alamat,
     }
     if (mode == 'tambah') {
-        daftarKaryawan.push(karyawanBaru)
+        daftarPelanggan.push(pelangganBaru)
     } else {
-        daftarKaryawan[0] = karyawanBaru
+        daftarPelanggan[0] = pelangganBaru
     }
     
-    document.getElementById('txtNama').value =""
-    document.getElementById('noInduk').value = ""
-    document.getElementById('masaKerja').value = ""
-    document.getElementById('gajiKaryawan').value = ""
+    document.getElementById('exampleInputNama1').value =""
+    document.getElementById('exampleInputEmail1').value = ""
+    document.getElementById('exampleInputnoTelp1').value = ""
+    document.getElementById('exampleInputNama1').value = ""
 
     mode = 'tambah'
 
-    tampilkanKaryawan()
+    tampilkanPelanggan()
     
  }
 
- const cariKaryawan = (nama) => {
-    for(let i =0; i<daftarKaryawan.length; i++) 
-        if (daftarKaryawan[i].nama == nama){
+ const cariPelanggan = (nama) => {
+    for(let i =0; i<daftarPelanggan.length; i++) 
+        if (daftarPelanggan[i].nama == nama){
             return i
         }
         return -1;
  }
  
- const hapusKaryawan= (target) => {
-    const indexDihapus= cariKaryawan (target)
+ const hapusPelanggan= (target) => {
+    const indexDihapus= cariPelanggan (target)
     if (indexDihapus !== -1){
-        daftarKaryawan.splice(indexDihapus,1)
-        tampilkanKaryawan()
+        daftarPelanggan.splice(indexDihapus,1)
+        tampilkanPelanggan()
     }
  }
 
- const editKaryawan = (target) => {
-    const indexEdit= cariKaryawan (target)
+ const editPelanggan = (target) => {
+    const indexEdit= cariPelanggan (target)
     
     console.log(target)
     console.log(indexEdit)
-    console.log(daftarKaryawan[indexEdit])
+    console.log(daftarPelanggan[indexEdit])
 
-    const karyawanDiedit = daftarKaryawan[indexEdit]
+    const pelangganDiedit = daftarPelanggan[indexEdit]
 
-    document.getElementById('txtNama').value = karyawanDiedit.nama
-    document.getElementById('noInduk').value = karyawanDiedit.noInduk
-    document.getElementById('masaKerja').value = karyawanDiedit.masaKerja
-    document.getElementById('gajiKaryawan').value = karyawanDiedit.gajiKaryawan
+    document.getElementById('exampleInputNama1').value = pelangganDiedit.nama
+    document.getElementById('exampleInputEmail1').value = pelangganDiedit.email
+    document.getElementById('exampleInputnoTelp1').value = pelangganDiedit.noTelepon
+    document.getElementById('exampleInputNama1').value = pelangganDiedit.alamat
 
     mode =  indexEdit
     }
     const batalEdit = (target) => {
-    document.getElementById('txtNama').value = ""
-    document.getElementById('noInduk').value = ""
-    document.getElementById('masaKerja').value = ""
-    document.getElementById('gajiKaryawan').value = ""
+    document.getElementById('exampleInputNama1').value = ""
+    document.getElementById('exampleInputEmail1').value = ""
+    document.getElementById('exampleInputnoTelp1').value = ""
+    document.getElementById('exampleInputNama1').value = ""
 
          mode = 'tambah' 
     }
- 
+
