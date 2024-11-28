@@ -1,74 +1,39 @@
 const daftarPelanggan= [
     {
-        nama:"Devyn Ramirez",
-        email: "awwwrsavh@gmail.com",
-        noTelepon: "123456789009",
-        alamat: "Jalan Melati"
+        nama:"Naradhipta Bayanaka",
+        email: "dhipta@gmail.com",
+        noTelepon: "089765473241",
+        alamat: "Jalan Srigunting Raya No.1 Party Anthem / (022) 601-1304"
 
     },
     {
-        nama:"Harmony Duncan",
-        email: "5",
-        noTelepon: "2109876543",
-        alamat: "4000000"
+        nama:"Anasera Lavanya",
+        email: "anasera@gmail.com",
+        noTelepon: "086754321785",
+        alamat: "Jalan Batununggal No.3, Mengger / 753-1377"
 
     },
     {
-        nama:"Clarissa Burgess",
-        email: "8",
-        noTelepon: "3210987654",
-        alamat: "7000000"
+        nama:"Maisadipta Awahita",
+        email: "mais@gmail.com",
+        noTelepon: "082356741853",
+        alamat: "Jalan Alun-Alun Utara No. 211 / 780-0003"
 
     },
     {
-        nama:"Reilly Blanchard",
-        email: "7",
-        noTelepon: "4321098765",
-        alamat: "7000000"
+        nama:"Saskara Raespati",
+        email: "raespat@gmail.com",
+        noTelepon: "089673583231",
+        alamat: "Jalan A H Nasution No. 14, Jatihandap / 727-1129 "
 
     },
     {
-        nama: "Zion Brooks",
-        email: "4",
-        noTelepon: "5432109876",
-        alamat: " 4000000"
+        nama: "Abhipraya Gautama",
+        email: "abhipray@gmail.com",
+        noTelepon: "085643128954",
+        alamat: "Jalan Venus No.6, Gumuruh / 731-6330"
 
-    },
-    {
-        nama:"Jovanny Mays",
-        email: "10",
-        noTelepon: "6543210987",
-        alamat: "7000000"
-
-    },
-    {
-        nama:"Cindy Chase",
-        email: "9",
-        noTelepon: "7654321098",
-        alamat: "7000000"
-
-    },
-    {
-        nama:"Kristin Mcdaniel",
-        email: "8",
-        noTelepon: "8765432109",
-        alamat: "7000000"
-
-    },
-    {
-        nama:"Macey Sanford",
-        email: "7",
-        noTelepon: "9876543210",
-        alamat: "7000000"
-
-    },
-    {
-        nama:"Alfredo Faulkner",
-        email: "10",
-        noTelepon: "10987654321",
-        alamat: "7000000"
-
-},
+    }
 ]
      let mode = 'tambah'
 
