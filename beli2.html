@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelian</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-header" style="background: #0486ff; color: white;">
+                        Menu
+                    </div>
+                    <div class="card-body"> 
+                        <div class="list-group">
+                            <a href="" class="list-group-item">Pembelian</a>
+                            <a href="" class="list-group-item">Daftar Bunga</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-9">
+                <div class="card" >
+                    <div class="card-header" style="background: #0486ff; color: white;">
+                        Pembelian
+                    </div>
+                    <div class="card-body">
+                        <form class="form-control p-4   " action="">
+                            <div class="mb-3">
+                                <label for="namaPelanggan" class="form-label">Nama Pelanggan</label>
+                                <select class="form-select mt-3 mb-3" id="namaPelanggan">
+                                    <option selected>Masukkan Nama</option>
+                                    <option value="1">Rasya</option>
+                                    <option value="2">Ilona</option>
+                                    <option value="3">Areksa</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="namaBunga" class="form-label">Nama Bunga</label>
+                                <select class="form-select mt-3 mb-3" id="namaBunga">
+                                    <option selected>Masukkan Nama Bunga</option>
+                                    <option value="1">Bunga Tulip</option>
+                                    <option value="2">Bunga Mawar</option>
+                                    <option value="3">Bunga Peony</option>
+                                    <option value="4">Bunga Bung</option>
+                                    <option value="5">Bunga Lily</option>
+                                    <option value="6">Bunga Wax</option>
+                                    <option value="7">Bunga Aster</option>
+                                    <option value="8">Bunga Daisy</option>
+                                    <option value="9">Bunga Baby's Breath</option>
+                                    <option value="10">Bunga Gerbera</option>
+                                    <option value="11">Bunga Matahari</option>
+                                    <option value="12">Bunga Dahlial</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="linkBunga" class="form-label">Link Bunga</label>
+                                <input type="text" class="form-control" required id="linkBunga">
+                            </div>
+                            <div class="mb-3">
+                                <label for="hargaBunga" class="form-label">Harga Bunga</label>
+                                <select class="form-select mt-3 mb-3" id="hargaBunga">
+                                    <option selected>Masukkan Harga</option>
+                                    <option value="1">Rp. 20.000</option>
+                                    <option value="2">Rp. 12.500</option>
+                                    <option value="3">Rp. 15.905</option>
+                                    <option value="4">Rp. 10.750</option>
+                                    <option value="5">Rp. 17.500</option>
+                                    <option value="6">Rp. 10.000</option>
+                                    <option value="7">Rp. 10.000</option>
+                                    <option value="8">Rp. 10.750</option>
+                                    <option value="9">Rp. 10.000</option>
+                                    <option value="10">Rp. 15.500</option>
+                                    <option value="11">Rp. 13.750</option>
+                                    <option value="12">Rp. 15.905</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="jumlahBunga" class="form-label">Jumlah Bunga</label>
+                                <input type="number" class="form-control" required id="jumlahBunga">
+                            </div>
+                            <div class="mb-3">
+                                <label for="hargaTotal" class="form-label">Harga Total</label>
+                                <input type="number" class="form-control" required id="hargaTotal">
+                            </div>
+                            <button class="btn btn-primary" type="pesan">Pesan</button> 
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card mt-5">
+                    <div class="card-header" style="background: #0486ff; color: white;">
+                        Daftar Bunga
+                    </div>
+                    <div class="card-body">
+                        <table class="table" id="tblBunga">
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Pelanggan</th>
+                                <th>Nama Bunga</th>
+                                <th>Link Bunga</th>
+                                <th>Harga Bunga</th>
+                                <th>Jumlah Bunga</th>
+                                <th>Harga Total</th>
+                            </tr>
+            
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+<script src="daftar bunga.js"></script>
+</html>
